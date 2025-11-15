@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MySpringBootSandboxApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MySpringBootSandboxApplication.class, args);
+		SpringApplication myServer = new SpringApplication(MySpringBootSandboxApplication.class);
+		var ctx = SpringApplication.run(MySpringBootSandboxApplication.class, args);
 	}
 
 }
